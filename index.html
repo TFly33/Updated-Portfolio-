@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Schedule</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        type="text/css">
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid bg-dark text-center headerBox">
+        <div class="container">
+            <h1 class="display-4 text-light"> <i class="fas fa-train"></i> Train Schedule <i class="fas fa-train"></i>
+            </h1>
+            <p class="lead text-light"> Making sure you stay on time, all the time. </p>
+        </div>
+    </div>
+
+    <header>
+
+    </header>
+
+    <div class="container formcontainer">
+        
+            <div class="card-header bg-dark text-light border border-dark"> <i class="fas fa-calendar-alt"></i> About Me
+            </div>
+            <div class="card-body border border-dark">
+                <p id="first">
+                    <img id="tomted" src="TomTed.png" alt="Picture of Tommy">
+                    I'm a 31 year old living in Center City, Philadelphia with my wife and two dogs.
+                    I grew up in Chicago, Frankfurt Germany, and Northern Virginia.
+                    I played Division 1 baseball at Mount Saint Mary's University in Emmitsburg, Maryland from
+                    2007-2011 (<a href="https://www.mountathletics.com/sports/bsb/2010-11/bios/flynn_tommy00?view=bio">here's my
+                      bio</a>).
+                    Once I realized I couldn't hit a curveball and wouldn't make it as a pro, I decided to go to law school.
+                  </p>
+          
+                  </p>
+                  <!--Separate paragraphs with separate ID tags make it easier to move them each individually-->
+                  <p id="second">
+                    I graduated from George Mason School of Law in 2014. I'm barred to practice law in both Virginia and
+                    Pennsylvania.
+                    I've worked in International Aviation Law (I know, random) and currently am an associate attorney working in
+                    real estate law.
+                    I also have some startup experience. I was the first hire at a youth sports sponsorship startup in Philly and
+                    previously co-founded a peer-to-peer editing platform (it no longer exists...turns out people don't like
+                    things edited).
+                  </p>
+          
+                  <p id="third">
+                    I'm also an obsessive hobbyist. I am a part-time professional poker player, a Class-A chess player
+                    (<a href="https://www.moron2master.com">follow my journey to master here!</a>), an amateur card magician, and
+                    occasionally a writer
+                    (<a href="https://medium.com/@tfly.flynn">here are some articles from the past</a>). I'm always looking to
+                    meet new people and experience new things.
+          
+                  </p>
+            </div>
+        </div>
+    </div>
+    <div class="container formcontainer">
+        <div class="card-header bg-dark text-light"> <i class="fas fa-user-plus"></i> Add Trains</div>
+        <div class="trainInput card-body background-color border border-dark">
+            <form>
+                <div class="">
+                    <div class="form-group searchT">
+                        <label for="inputTrain">Train Name</label>
+                        <input type="text" class="form-control" id="trainName" placeholder="">
+                    </div>
+                    <div class="">
+                        <div class="form-group">
+                            <label for="inputDestination">Destination</label>
+                            <input type="text" class="form-control" id="destination" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputTime">First Train Time (HH:MM) <a> Military time </a> </label>
+                    <input type="text" name="time" class="form-control" id="firstTrainTime" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="inputFrequency">Frequency (min) </label>
+                    <input type="text" class="form-control" id="frequency" placeholder="">
+                </div>
+
+                <button type="button" class="btn btn-dark submitButton" id="submit"> Submit</button>
+
+                <button type="button" class="btn btn-dark clearButton" id="clear"> Clear Results</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Link to Moment.js should go here -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <script src="assets/javascript/app.js" type="text/javascript">
+
+
+    // JS GOES HERE. 
+
+    </script>
+
+
+</body>
+
+</html>
