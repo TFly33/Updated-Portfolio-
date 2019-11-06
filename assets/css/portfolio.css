@@ -1,0 +1,21 @@
+.card-body
+{
+  
+    background-color:white;
+    font-weight:bold;
+  
+}
+
+.container
+{
+    margin-top:75px;
+}
+
+body{
+    background-color:lightgray;
+}
+
+.breadcrumb
+{
+    background-color:white;
+}

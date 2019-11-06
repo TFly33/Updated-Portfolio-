@@ -10,8 +10,9 @@ p
 
 .card-body
 {
-    background-color:lightgray;
+    /* background-color:lightgray; */
     color:darkslategrey;
+    background-color:white;
     font-weight:bold;
     text-align:justify;
 }
@@ -21,4 +22,16 @@ p
     margin-top:75px;
 }
 
+body{
+    background-color:lightgray;
+}
 
+.breadcrumb
+{
+    background-color:white;
+}
+
+.border-primary
+{
+   border:2px;
+}
