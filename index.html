@@ -11,107 +11,35 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
         type="text/css">
-    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
-
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
 </head>
 
 <body>
 
-    <div class="jumbotron jumbotron-fluid bg-dark text-center headerBox">
-        <div class="container">
-            <h1 class="display-4 text-light"> Tommy Flynn
-            </h1>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active"><a href="#">About Me</a></li>
+            <li class="breadcrumb-item" aria-current="page">Portfolio</li>
+        </ol>
+    </nav>
+
+   <br>
+   <br>
+   <br>
+   <br>
+        <div class="card-header border-none text-center hi">
+            <h2>Hi. I'm Tommy.</h2>
         </div>
-    </div>
-
-    <header>
-
-    </header>
-
-    <div class="container formcontainer">
-
-        <div class="card-header bg-dark text-light border border-dark"> <i class="fas fa-calendar-alt"></i> About Me
+        <div class="card-header text-center hi">
+            <h3> I like building things that are simple and clean.</h3>
         </div>
-        <div class="card-body border border-dark">
-            <p id="first">
-                <img id="tomted" src="assets/images/TomTed.png" alt="Picture of Tommy">
-                I'm a 31 year old living in Center City, Philadelphia with my wife and two dogs.
-                I grew up in Chicago, Frankfurt Germany, and Northern Virginia.
-                I played played Division 1 baseball during college. (<a 
-                    href="https://www.mountathletics.com/sports/bsb/2010-11/bios/flynn_tommy00?view=bio">here's my
-                    bio</a>).
-                Once I realized I couldn't hit a curveball, I decided to go to law school.
-            </p>
-
-            </p>
-            <!--Separate paragraphs with separate ID tags make it easier to move them each individually-->
-            <p id="second">
-                I graduated from law school in 2014. I'm barred to practice law in both Virginia and
-                Pennsylvania.
-                I've been working as an associate attorney since 2014 and currently specialize in real estate law. After moving to Philadelphia, I started a real estate investment company. We currently own and operate about twenty units total in Philadelphia and Baltimore. 
-                I also have some startup experience. I was the first hire at a youth sports sponsorship startup in
-                Philly and previously co-founded a peer-to-peer editing platform (it no longer exists...turns out people don't like
-                things edited).
-            </p>
-
-            <p id="third">
-                I'm also an obsessive hobbyist. I am a part-time professional poker player, a Class-A chess player
-                (<a href="https://www.moron2master.com">follow my journey to master here!</a>), an amateur card
-                magician, and
-                occasionally a writer
-                (<a href="https://medium.com/@tfly.flynn">here are some articles from the past</a>). I'm always looking
-                to
-                meet new people and experience new things.
-
-            </p>
-        </div>
-    </div>
-    </div>
-    <div class="container formcontainer">
-        <div class="card-header bg-dark text-light"> <i class="fas fa-user-plus"></i> Add Trains</div>
-        <div class="trainInput card-body background-color border border-dark">
-            <form>
-                <div class="">
-                    <div class="form-group searchT">
-                        <label for="inputTrain">Train Name</label>
-                        <input type="text" class="form-control" id="trainName" placeholder="">
-                    </div>
-                    <div class="">
-                        <div class="form-group">
-                            <label for="inputDestination">Destination</label>
-                            <input type="text" class="form-control" id="destination" placeholder="">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputTime">First Train Time (HH:MM) <a> Military time </a> </label>
-                    <input type="text" name="time" class="form-control" id="firstTrainTime" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="inputFrequency">Frequency (min) </label>
-                    <input type="text" class="form-control" id="frequency" placeholder="">
-                </div>
-
-                <button type="button" class="btn btn-dark submitButton" id="submit"> Submit</button>
-
-                <button type="button" class="btn btn-dark clearButton" id="clear"> Clear Results</button>
-            </form>
-        </div>
-
-    </div>
-
-    <!-- Link to Moment.js should go here -->
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-
-    <script src="assets/javascript/app.js" type="text/javascript">
-
-
-    // JS GOES HERE. 
-
-    </script>
+        <br>
+        <div class="card-header text-center hi">
+                <h5> Please check out my portfolio, <br>and feel free to contact me for inquiries,<br> ...or even just coffee.</h5>
+            </div>
 
 
 </body>

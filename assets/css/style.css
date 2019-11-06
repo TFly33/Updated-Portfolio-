@@ -1,11 +1,41 @@
-.jumbotron
-{
-    padding:15px;
-}
-
 #tomted {
     height:200px;
     width:200px;
     float:left;
     margin-right:10px;
+}
+
+.card-body
+{
+    padding:10px;
+    line-height:normal;
+    color:darkgray;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+}
+
+.formcontainer 
+{
+    margin-top:10px;
+}
+
+body, .breadcrumb
+{
+    background-image:url("images/Background.png");
+    color:white;
+}
+
+.hi
+{
+    background:transparent;
+}
+
+.iLike
+{
+    background:transparent;
+}
+
+.card-header
+{
+    border:none;
 }
